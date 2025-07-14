@@ -15,10 +15,10 @@ class CareerExpertSystem(KnowledgeEngine):
 	def electronics(self):
 		print("Suggested Career Path: Electronics Engineering")
 	@Rule(StudentFacts(likes='Programming'), StudentFacts(likes='Statistics'))
-	def AI-DS(self):
+	def AIDS(self):
 		print("Suggested Career Path: Artificial Intelligence And Data Science")
 	@Rule(StudentFacts(likes='Programming'), StudentFacts(likes='AI Concepts'))
-	def AI-ML(self):
+	def AIML(self):
 		print("Suggested Career Path: Artificial Intelligence and Machine Learning Engineering")
 	
 def main():
