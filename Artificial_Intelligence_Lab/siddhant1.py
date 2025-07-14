@@ -14,6 +14,13 @@ class CareerExpertSystem(KnowledgeEngine):
 	@Rule(StudentFacts(likes='Circuits'), StudentFacts(likes='Maths'))
 	def electronics(self):
 		print("Suggested Career Path: Electronics Engineering")
+	@Rule(StudentFacts(likes='Programming'), StudentFacts(likes='Statistics'))
+	def mechanical(self):
+		print("Suggested Career Path: Artificial Intelligence And Data Science")
+	@Rule(StudentFacts(likes='Programming'), StudentFacts(likes='AI Concepts'))
+	def mechanical(self):
+		print("Suggested Career Path: Artificial Intelligence and Machine Learning Engineering")
+	
 def main():
 	engine = CareerExpertSystem()
 	engine.reset()
